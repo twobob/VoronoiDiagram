@@ -26,7 +26,7 @@ The following code:
     
     var voronoiDiagram = new VoronoiDiagram<Color>(new Rect(0f, 0f, width, height));    
 
-    var points = new List<Vector2>();
+    var points = new List<VoronoiDiagramSite<Color>>();
     while(points.Count < 1000)
     {
         int randX = Random.Range(0, width - 1);
@@ -39,7 +39,7 @@ The following code:
         }
     }
 
-    voronoiDiagram.AddPoints(points);
+    voronoiDiagram.AddSites(points);
     voronoiDiagram.GenerateSites(2);
 
     var outImg = new Texture2D(width, height);
