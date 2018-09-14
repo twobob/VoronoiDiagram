@@ -35,7 +35,7 @@ The following code:
         var point = new Vector2(randX, randY);
         if(!points.Any(item => item.Coordinate == point))
         {
-            points.Add(new VoronoiDiagramSite<Color>(point, new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f));
+            points.Add(new VoronoiDiagramSite<Color>(point, new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f))));
         }
     }
 
